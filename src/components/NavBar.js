@@ -29,7 +29,7 @@ const NavBar = () => {
           <p  style={{  transition: "all 0.35s ease-in-out",  }} >  Notre magazin </p>
           <img  src="images/markicon.png" className="mark_location2"  alt="mark location"   />
         </div>
-        <Link to='/' className="text-body"> <p className="accueil"> Accueil</p> </Link>
+        <Link to='/' className="text-body  border"> <p className="accueil"> Accueil</p> </Link>
         <div className="boutique">
         
           <p className="boutique_title">Boutique</p>
@@ -44,7 +44,7 @@ const NavBar = () => {
           </div>
           
         </div>
-        <Link to='/' className="text-body" > <p className="rea">Nos réalisations</p> </Link>
+        <Link to='/' className="text-body border" > <p className="rea">Nos réalisations</p> </Link>
         <div className="contact m-0">
           <p className="contact_title">Contactez-nous</p>
           <ContactForm />

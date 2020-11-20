@@ -329,12 +329,27 @@ input[type="text"] {
 .accueil {
   grid-area: accueil;
   
-  border-right: 1px solid #e2e2e2;
-  border-left: 1px solid #e2e2e2;  cursor: pointer;
+
+
 }
-.main_navbar a:hover {
+.main_navbar .border:hover {
   background-color:#7daf3f;
-  color: white;
+ 
+
+}
+.main_navbar .border:hover p {
+ color:white;
+ 
+
+}
+
+
+
+
+.main_navbar .border {
+  border-left: 1px solid #e2e2e2;  cursor: pointer;
+  border-right: 1px solid #e2e2e2;
+  padding-top: 10px;
 }
 .boutique {
   grid-area: boutique;
