@@ -1,10 +1,12 @@
 import React from "react";
 import {AccessTime} from "@material-ui/icons";
+import styled from "styled-components";
 const Footer = () => {
   return (
     <>
-       <div className="barrfooter"></div>
-      <div className="footer">
+       <Footerbar></Footerbar>
+      <Foote>
+        <div className="footers">
         <img src="images/logo.png" alt="logo exterieur" className="footer_logo" />
         <div className="footer_links">
           <div className="footer_list link">
@@ -48,9 +50,57 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
+        </div>
+      </Foote>
     </>
   );
 };
+export  const Footerbar = styled.div`
+ {
+  width: 84%;
+  margin: 0 auto;
+  height: 10px;
+  background: #7daf3f;
+}`;
+export const Foote = styled.div`
+.footers{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  width: 260px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+
+.listeFooter h4 {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 29px;
+}
+.listeFooter p {
+  margin-bottom: 10px;
+  font-weight: 500;
+
+}
+.link p  {
+  cursor: pointer;
+}
+.footer_links {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+`;
+
 
 export default Footer;

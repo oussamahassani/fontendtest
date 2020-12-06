@@ -1,3 +1,5 @@
+
+
 .flexfentreproduit{
     display: flex;
     justify-content: space-evenly;
@@ -19,6 +21,20 @@
 }
 
 /* block sidebarproduits */
+
+
+/* end block */
+
+/*banner2*/
+.banner2{
+
+background-color: #4d302b;
+padding: 15px;
+color: white;
+position: relative;
+height: 435px;
+overflow: hidden;
+}
 .Overflow {
   overflow: hidden;position: absolute;
   bottom: 20;
@@ -26,9 +42,10 @@
   left: 50%;
 }
 .transform{
-  transform: rotate(-20deg);
+  transform: rotate(-15deg);
   position: absolute;
-  left: -20px;
+  left: -15px;
+  width: 32%;
 }
 
 a em{
@@ -42,62 +59,6 @@ a em{
       flex-direction:"column" ;
       width:60%;
 }
-.nav-sidebar{
-    background-color: white;
-    color: white;
-  
-}
-.nav-sidebar a , .nav-sidebar h3  {
-    padding-left: 15px;
-    color: black
-
-}
-.nav-sidebar .active , .nav-sidebar .textgray:hover   {
-    background-color:  #7daf3f;
-  
-}
-.textgray:hover a {
-    color: white;
-}
-   
-.active a {
-    color: white;
-
-}
-
-.textgray a {
-    color: gray;
-  
-
-}
-.textgray{
-  padding: 0 5px;
-  border-bottom: 2px solid #7c7b7b21;
-}
-.nav-sidebar .flexbetween {
-display: flex;
-justify-content: space-between;
-}
-.nav-sidebar .textgray {
-
-    padding: 10px 0px;
-}
-.marginnull{
-    margin-top: 2px;
-margin-bottom: 2px
-}
-
-/* end block */
-
-/*banner2*/
-.banner2{
-background-color: #4d302b;
-padding: 15px;
-color: white;
-position: relative;
-height: 390px;
-overflow: hidden;
-}
 .banner2 .icon{
     position: relative;
 width: 250px;
@@ -105,6 +66,18 @@ height: 250px;
 margin: 0px;
 padding: 0px;
 left: -14px;
+}
+.banner2-Arrow{
+  
+    width: 100% !important;
+    position: absolute;
+    right: -115px;
+    bottom: 20px;
+  
+}
+.titrebanner2{
+  font-weight: bold;
+  font-size: 22px;
 }
 
 /*end banner2*/
@@ -133,12 +106,13 @@ left: -14px;
     height: 70%;
     background: white;
     border: 1px solid #e2e2e2;
-    padding: 45px;
-
+    padding: 30px;
+overflow: hidden;
   }
   .Card h1 {
     font-size: 25px;
     margin-bottom: 30px;
+    font-weight: bold;
   }
   .Card p {
     font-size: 14px;
@@ -167,6 +141,12 @@ position: relative;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   }
+ 
+  .Container:hover .Rcontent{
+    transform: scale(1.2);
+
+  }
+ 
   
   .Rwrapper {
     width: 100%;
@@ -199,9 +179,8 @@ position: relative;
     position: absolute;
     bottom: -1px;
     right: -1px;
-    width: 124px;
-    -webkit-transition: width 0.2s ease-in-out;
-    transition: width 0.2s ease-in-out;
+    width: 84px;
+
   }
   ._dots_container {
     display: none;
@@ -316,8 +295,13 @@ position: relative;
  }
  
  .Block:hover .card_arrow {
- 
+
    opacity: 1;
+ }
+ .Block:hover > img{
+   transform: scale(1.1);
+   transition: all 0.2s ;
+  
  }
  .Block:hover .card_inner_content h1 {
    -webkit-transform: translateX(-50%) translateY(-100%);
@@ -336,33 +320,32 @@ opacity: 0;
 }
 .rigthicon1 {
   margin-left: 20px;
+  transition: all 0.6s linear;
     }
 .search:hover .rigthicon1 {
+  transform: translateX(-15px);
+  transition: all 0.6s ease-in;
+
   opacity: 0;
     }
   .search:hover .left-icon2 {
 opacity: 1;
-margin-right:  20px;
+-webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+    transition: all 0.6s ease-in;
   }
   .search:hover   .search_input{
-margin-left: -20px;
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
   }
-  .mark_location2{
-    opacity: 0;
-  }
-  .localisation:hover{
-padding: 0 10px;
+ 
+  .localisation:hover ,.search:hover {
+
   
-    -webkit-transition: width 25ms ease-in;
--moz-transition: width 25ms ease-in;
--ms-transition: width 25ms ease-in;
--o-transition: width 25ms ease-in;
-transition: width 25ms ease-in;
+    -webkit-transition: all 25ms ease-in;
+-moz-transition: all 0.6s ease-in;
+-ms-transition: all 0.6s ease-in;
+-o-transition: all 0.6s ease-in;
+transition: all 0.6s ease-in;
   }
-  .localisation:hover  .mark_location2{
-    opacity: 1;
-    margin-left: 20px;
-  }
-  .localisation:hover  .mark_location1{
-    opacity: 0;
-  }
+  /**/

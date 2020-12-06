@@ -1,8 +1,9 @@
 import React from 'react'
 import * as AcceulComponent from '../components';
+import styled from "styled-components";
 export default function Acceuils() {
     return (
-        <div>
+        <Acceuil>
                <AcceulComponent.PhotoHader/>
             
             <AcceulComponent.AccProducts/>
@@ -11,7 +12,13 @@ export default function Acceuils() {
            <AcceulComponent.CardsBlocks/>
            <AcceulComponent.AboutMagasin/>
 
-        </div>
+
+        </Acceuil>
         
     )
 }
+
+const Acceuil = styled.div `
+padding-bottom : 12rem;
+background:#F8F8F8;
+`;

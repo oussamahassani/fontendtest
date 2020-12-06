@@ -3,7 +3,8 @@ import * as ProduitComponent from '../components'
 import { useSelector, useDispatch } from "react-redux";
 import './style.css'
 import {GetallProducts} from '../action/produitaction'
-
+import styled from "styled-components";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 export default function NosProduit(props) {
    
@@ -20,7 +21,7 @@ export default function NosProduit(props) {
     loadProduct();
   }, [dispatch]);
     return (
-        <div>
+        <Product>
  
           
         
@@ -35,13 +36,17 @@ export default function NosProduit(props) {
       <div>
        
         <div>
-        <img src="images/toolbox.png" alt="toolbox" /><br/><br/>
-          <h4>Configurez votre espace</h4><br/>
+        <img src="images/toolbox.png" alt="toolbox"  /><br/><br/>
+          <h4 className="titrebanner2">Configurez votre espace</h4><br/>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet,
+             consetetur sadipscing elitr sed diam
             nonumy eirmod tempor invidu.
           </p><br/>
+          <div>
           <img src="images/Evert.png" alt="Evert" className="transform" />
+          <ArrowForwardIcon className="banner2-Arrow" />
+          </div>
         </div>
      
       </div>
@@ -69,6 +74,11 @@ export default function NosProduit(props) {
   
        
       </div>
-        </div>
+        </Product>
     )
 }
+
+const Product = styled.div `
+background:#F8F8F8;
+padding-bottom:5rem;
+`;

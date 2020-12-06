@@ -10,7 +10,7 @@ import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
  root: {
-   width: 300,
+   width: 310,
    fontSize:15,
    
 
@@ -33,7 +33,7 @@ export default function Cardproduct({img,prix,productname,description ,index}) {
           image={img}
           title="Contemplative Reptile"
         />
-        {indexshow.includes(index)? <button className="btnvert btn ">sur commande</button> : "" }
+        {indexshow.includes(index)? <button className="btnvert btn ">SUR COMMANDE</button> : "" }
         <CardContent>
           
           <p className="colorcontetnt">
